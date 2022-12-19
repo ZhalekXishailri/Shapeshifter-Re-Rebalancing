@@ -1,0 +1,17 @@
+@1 = ~Shapeshifter Re-Rebalancing~
+@2 = ~Greater Werewolf Paw~
+@3 = ~This symbolic paw represents a Shapeshifter Druid's ultimate control over lycanthropy. While the paw is wielded the Shapeshifter becomes a Greater Werewolf. When the paw is removed, the Shapeshifter returns to human form. The paws of a Greater Werewolf count as +4 weapons.
+STATISTICS:
+Attributes:  21 STR, 20 DEX, 25 CON
+Base Armor Class:  -6
+Base Saving Throws:  1/1/1/2/1
+Resistances:  40% magic resistance, 50% elemental resistance, immunity to non-magical weapons
+Regeneration:  3 hit points per second
+Attacks Per Round:  3
+Base Paw THAC0:  6 
+Damage:  2D8
+Damage type:  slashing
+Speed Factor:  3
+Proficiency Type:  Dagger 
+Type:  1-handed~
+@4 = ~Greater Bearwere~

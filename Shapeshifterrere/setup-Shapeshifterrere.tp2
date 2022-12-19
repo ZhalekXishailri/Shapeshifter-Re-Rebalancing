@@ -1,0 +1,20 @@
+BACKUP ~Shapeshifterrere/Backup~ // So WeiDU can uninstall
+AUTHOR ~Dracoqwerty~
+README ~Shapeshifterrere/readme.txt~ // Shows readme file
+VERSION ~1.0~
+LANGUAGE ~English~ ~english~ ~Shapeshifterrere/lang/english/Shapeshifterrere.tra~
+BEGIN @1
+	INCLUDE ~Shapeshifterrere/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
+	INCLUDE ~Shapeshifterrere/lib/handle_charsets.tpa~   // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
+	ACTION_IF (GAME_IS ~soa tob bgt bgee bg2ee eet iwdee~) THEN BEGIN 
+		COPY ~Shapeshifterrere/2da/clabdr03.2da~ ~override~
+		COPY ~Shapeshifterrere/itm/ringbear.itm~ ~override~
+		COPY ~Shapeshifterrere/itm/wwweregr.itm~ ~override~
+			WRITE_LONG NAME1 RESOLVE_STR_REF (@2) // unidentified name for itm OR spell name
+  	 		WRITE_LONG NAME2 RESOLVE_STR_REF (@2) // unidentified name for itm OR spell name
+  			WRITE_LONG UNIDENTIFIED_DESC RESOLVE_STR_REF (@3) // unidentified description for itm, spell description for spells	
+ 	 		WRITE_LONG IDENTIFIED_DESC RESOLVE_STR_REF (@3) // identified description for itm, spell description for spells
+		COPY ~Shapeshifterrere/cre/wwbearwe.cre~ ~override~
+			WRITE_LONG NAME1 RESOLVE_STR_REF (@4) // unidentified name for itm OR spell name
+  	 		WRITE_LONG NAME2 RESOLVE_STR_REF (@4) // unidentified name for itm OR spell name                                                          
+END
